@@ -11,7 +11,7 @@ export default function ProsCons({ pros, cons }: { pros: string[]; cons: string[
         <ul className="space-y-2">
           {pros.map((pro, i) => (
             <li key={i} className="flex items-start gap-2 text-green-900">
-              <span className="mt-1 text-green-500">&check;</span>
+              <span className="mt-1 text-green-500">✓</span>
               <span>{pro}</span>
             </li>
           ))}
@@ -27,7 +27,7 @@ export default function ProsCons({ pros, cons }: { pros: string[]; cons: string[
         <ul className="space-y-2">
           {cons.map((con, i) => (
             <li key={i} className="flex items-start gap-2 text-red-900">
-              <span className="mt-1 text-red-500">&times;</span>
+              <span className="mt-1 text-red-500">×</span>
               <span>{con}</span>
             </li>
           ))}

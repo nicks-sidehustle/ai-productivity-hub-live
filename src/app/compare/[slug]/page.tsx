@@ -88,7 +88,7 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
               <ul className="space-y-2">
                 {comparison.bestFor.tool1.map((use) => (
                   <li key={use} className="flex items-start gap-2 text-gray-700">
-                    <span className="text-blue-500">\u2713</span> {use}
+                    <span className="text-blue-500">✓</span> {use}
                   </li>
                 ))}
               </ul>
@@ -98,7 +98,7 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
               <ul className="space-y-2">
                 {comparison.bestFor.tool2.map((use) => (
                   <li key={use} className="flex items-start gap-2 text-gray-700">
-                    <span className="text-purple-500">\u2713</span> {use}
+                    <span className="text-purple-500">✓</span> {use}
                   </li>
                 ))}
               </ul>
@@ -108,7 +108,7 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
 
         {/* Verdict */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 mb-10">
-          <h2 className="text-lg font-semibold mb-2">\ud83c\udfaf Our Verdict</h2>
+          <h2 className="text-lg font-semibold mb-2">🎯 Our Verdict</h2>
           <p className="text-gray-700">{comparison.verdict}</p>
         </div>
 

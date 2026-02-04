@@ -66,7 +66,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
         {/* Quick Verdict */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 mb-10">
-          <h2 className="text-lg font-semibold mb-2">\ud83c\udfaf Quick Verdict</h2>
+          <h2 className="text-lg font-semibold mb-2">{"🎯"} Quick Verdict</h2>
           <p className="text-gray-700">{tool.verdict}</p>
         </div>
 
@@ -132,7 +132,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           <div className="grid sm:grid-cols-2 gap-3">
             {tool.features.map((feature) => (
               <div key={feature} className="flex items-start gap-2">
-                <span className="text-green-500 mt-0.5">\u2713</span>
+                <span className="text-green-500 mt-0.5">{"✓"}</span>
                 <span className="text-gray-700">{feature}</span>
               </div>
             ))}
