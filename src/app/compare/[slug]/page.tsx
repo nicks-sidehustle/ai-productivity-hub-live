@@ -10,8 +10,9 @@ export function generateStaticParams() {
   return comparisons.map((c) => ({ slug: c.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const comparison = comparisons.find((c) => c.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const comparison = comparisons.find((c) => c.slug === slug);
   if (!comparison) return {};
   return {
     title: comparison.title,
@@ -19,8 +20,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function ComparePage({ params }: { params: { slug: string } }) {
-  const comparison = comparisons.find((c) => c.slug === params.slug);
+export default async function ComparePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const comparison = comparisons.find((c) => c.slug === slug);
   if (!comparison) notFound();
 
   const toolA = tools.find((t) => t.slug === comparison.tool1Slug);

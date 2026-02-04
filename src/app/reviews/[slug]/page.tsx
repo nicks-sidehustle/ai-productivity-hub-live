@@ -12,17 +12,19 @@ export function generateStaticParams() {
   return tools.map((tool) => ({ slug: tool.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const tool = tools.find((t) => t.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const tool = tools.find((t) => t.slug === slug);
   if (!tool) return {};
   return {
-    title: `${tool.name} Review 2026 — Honest Analysis, Pricing & ROI`,
+    title: `${tool.name} Review 2026 \u2014 Honest Analysis, Pricing & ROI`,
     description: `${tool.name}: ${tool.tagline} Rating: ${tool.rating}/5. In-depth review with real-world testing, pricing breakdown, pros/cons, and who it's best for.`,
   };
 }
 
-export default function ReviewPage({ params }: { params: { slug: string } }) {
-  const tool = tools.find((t) => t.slug === params.slug);
+export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const tool = tools.find((t) => t.slug === slug);
   if (!tool) notFound();
 
   const sections = reviewContent[tool.slug] || [];
