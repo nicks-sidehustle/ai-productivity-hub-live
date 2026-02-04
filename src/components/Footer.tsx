@@ -50,6 +50,7 @@ export default function Footer() {
           <p className="text-sm text-blue-300">&copy; 2026 OneClickAI.io &mdash; Your trusted guide to AI productivity tools</p>
           <div className="flex gap-6">
             <Link href="/affiliate-disclosure" className="text-sm text-blue-300 hover:text-white transition-colors">Affiliate Disclosure</Link>
+            <Link href="/privacy-policy" className="text-sm text-blue-300 hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/about" className="text-sm text-blue-300 hover:text-white transition-colors">About</Link>
           </div>
         </div>
