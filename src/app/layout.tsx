@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: 'OneClickAI — Find the Perfect AI Tools for Your Workflow',
     template: '%s | OneClickAI',
   },
-  description: 'Honest, ROI-focused reviews of AI productivity tools. Compare ChatGPT, Claude, Notion AI, and 50+ more to find the right tools for your business.',
+  description: 'Honest, ROI-focused reviews of AI productivity tools. Compare ChatGPT, Claude, Copilot, and more AI tools to find the right ones for your business.',
   openGraph: {
     type: 'website',
     siteName: 'OneClickAI',

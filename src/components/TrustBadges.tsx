@@ -1,9 +1,11 @@
+import { tools } from '@/data/tools';
+
 export default function TrustBadges() {
   const badges = [
-    { icon: '\ud83d\udcca', label: '50+ Tools Reviewed' },
-    { icon: '\ud83d\udd04', label: 'Updated Monthly' },
-    { icon: '\ud83d\udee1\ufe0f', label: 'No Sponsored Rankings' },
-    { icon: '\u2705', label: 'Real-World Tested' },
+    { icon: '📊', label: `${tools.length} AI Tools Reviewed` },
+    { icon: '🔄', label: 'Updated Monthly' },
+    { icon: '🛡️', label: 'No Sponsored Rankings' },
+    { icon: '✅', label: 'Real-World Tested' },
   ];
 
   return (
