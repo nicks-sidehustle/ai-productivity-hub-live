@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'anthropic-cowork-what-it-means-for-your-business',
+    title: 'The $285 Billion AI Shakeup: What Anthropic Cowork Means for Your Business',
+    excerpt: 'A single AI launch just wiped out $285B in software stocks. Here is what the Claude Cowork revolution actually means for small and mid-sized businesses — and how to adapt.',
+    category: 'Analysis',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-06',
+    readTime: '10 min read',
+    featured: true,
+  },
+  {
     slug: 'top-10-ai-tools-small-business-2026',
     title: 'Top 10 AI Tools for Small Business Owners in 2026',
     excerpt: 'Cut through the hype. These are the AI tools that actually deliver ROI for small businesses.',
