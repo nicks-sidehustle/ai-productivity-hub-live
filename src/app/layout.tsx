@@ -33,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.className}>
       <head>
+        <meta name="impact-site-verification" content="78665e5e-adc1-47da-b87a-d6e8b9ae069e" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-NS7WCWRVJX" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
