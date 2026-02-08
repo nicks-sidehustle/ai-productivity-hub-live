@@ -7,6 +7,7 @@ import AffiliateButton from '@/components/AffiliateButton';
 import PricingBadge from '@/components/PricingBadge';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import AuthorBio from '@/components/AuthorBio';
 
 export function generateStaticParams() {
   return tools.map((tool) => ({ slug: tool.slug }));
@@ -156,8 +157,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           </div>
         </section>
 
+        {/* Author Bio */}
+        <AuthorBio authorName="OneClickAI Team" />
+
         {/* Bottom CTA */}
-        <div className="bg-[#1a1a2e] text-white rounded-2xl p-8 text-center mb-10">
+        <div className="mt-10 bg-[#1a1a2e] text-white rounded-2xl p-8 text-center mb-10">
           <h2 className="text-2xl font-bold mb-3">Ready to try {tool.name}?</h2>
           <p className="text-gray-300 mb-6">Join millions of professionals already using {tool.name} to supercharge their workflow.</p>
           <AffiliateButton url={tool.affiliateUrl} name={`Try ${tool.name} Free`} size="lg" />

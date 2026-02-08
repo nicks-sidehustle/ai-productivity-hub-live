@@ -5,6 +5,7 @@ import { blogPosts, getBlogPostBySlug } from '@/data/blog';
 import { blogContent } from '@/data/blog-content';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd';
 import EmailCapture from '@/components/EmailCapture';
+import AuthorBio from '@/components/AuthorBio';
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -78,7 +79,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           })}
         </div>
 
-        <div className="mt-16 rounded-2xl bg-surface-alt p-8">
+        <AuthorBio authorName={post.author} />
+
+        <div className="mt-12 rounded-2xl bg-surface-alt p-8">
           <EmailCapture />
         </div>
 
