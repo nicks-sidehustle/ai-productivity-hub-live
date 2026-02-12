@@ -41,10 +41,10 @@ export default function EmailCapture({ variant = 'default' }: { variant?: 'defau
       {!isFooter && (
         <>
           <h3 className={`font-bold ${isHero ? 'text-3xl text-white mb-4' : 'text-2xl text-gray-900 mb-3'}`}>
-            Get the Weekly AI Tool Briefing
+            Subscribe & Enter Our Monthly AI Tools Giveaway!
           </h3>
           <p className={`mb-6 ${isHero ? 'text-lg text-blue-100' : 'text-gray-500'}`}>
-            New reviews, deals, and productivity tips — delivered every Tuesday. No spam, unsubscribe anytime.
+            Get exclusive reviews, deals, and productivity tips — plus a chance to win premium AI tool subscriptions every month. No spam, unsubscribe anytime.
           </p>
         </>
       )}
