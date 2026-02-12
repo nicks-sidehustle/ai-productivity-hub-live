@@ -11,6 +11,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'microsoft-ai-ceo-white-collar-automation-18-months',
+    title: 'Microsoft AI CEO Says Your Job Will Be Automated in 18 Months — Here\'s What to Actually Do About It',
+    excerpt: 'Mustafa Suleyman claims most white-collar work will be fully automated within 12-18 months. Whether he\'s right or wrong, here\'s how smart professionals are preparing.',
+    category: 'Analysis',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-12',
+    readTime: '9 min read',
+    featured: true,
+  },
+  {
     slug: 'anthropic-cowork-what-it-means-for-your-business',
     title: 'The $285 Billion AI Shakeup: What Anthropic Cowork Means for Your Business',
     excerpt: 'A single AI launch just wiped out $285B in software stocks. Here is what the Claude Cowork revolution actually means for small and mid-sized businesses — and how to adapt.',
