@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +10,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#4361ee] text-lg font-bold text-white">1</div>
-          <span className="text-xl font-bold text-gray-900">OneClickAI</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="OneClickAI"
+            width={180}
+            height={50}
+            className="h-10 sm:h-12 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
