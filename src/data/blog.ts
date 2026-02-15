@@ -11,6 +11,36 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'vibe-working-gen-z-ai-trend-actually-genius',
+    title: '"Vibe Working": The Gen Z AI Trend That\'s Actually Genius',
+    excerpt: 'How a quirky workplace concept is quietly revolutionizing productivity — and why your business should pay attention.',
+    category: 'Trends',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-15',
+    readTime: '8 min read',
+    featured: true,
+  },
+  {
+    slug: 'ai-voice-agent-business-2026-setup-guide',
+    title: 'Why Your Business Needs an AI Voice Agent in 2026 (And How to Set One Up)',
+    excerpt: 'The technology that sounded like science fiction six months ago is now cutting customer service costs by 60%. Here\'s your complete implementation guide.',
+    category: 'Implementation',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-15',
+    readTime: '11 min read',
+    featured: true,
+  },
+  {
+    slug: '4000-dollar-ai-business-solo-empire-tools',
+    title: 'The $4,000 AI Business: 7 Tools That Run a Solo Empire',
+    excerpt: 'How one entrepreneur built a retail business with AI tools, a $4,000 budget, and zero employees — and why this changes everything.',
+    category: 'Strategy',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-15',
+    readTime: '12 min read',
+    featured: true,
+  },
+  {
     slug: 'microsoft-ai-ceo-white-collar-automation-18-months',
     title: 'Microsoft AI CEO Says Your Job Will Be Automated in 18 Months — Here\'s What to Actually Do About It',
     excerpt: 'Mustafa Suleyman claims most white-collar work will be fully automated within 12-18 months. Whether he\'s right or wrong, here\'s how smart professionals are preparing.',
