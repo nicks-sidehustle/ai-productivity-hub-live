@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <!-- Brain with cursor icon -->
+  <g transform="translate(0, 5)">
+    <!-- Circular arrows -->
+    <path d="M20 5 A15 15 0 0 1 35 20" stroke="#4361ee" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M35 20 L32 17 M35 20 L32 23" stroke="#4361ee" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M35 35 A15 15 0 0 1 20 20" stroke="#4361ee" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M20 20 L23 17 M20 20 L17 17" stroke="#4361ee" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Brain simplified -->
+    <circle cx="27" cy="20" r="8" stroke="#1a1a2e" stroke-width="2" fill="none"/>
+    <path d="M23 17 Q27 20 23 23 M27 15 L27 25 M31 17 Q27 20 31 23" stroke="#1a1a2e" stroke-width="1.5" fill="none"/>
+    <!-- Cursor -->
+    <path d="M33 25 L38 30 L35 31 L37 35 L35 36 L33 32 L31 34 Z" fill="#4361ee"/>
+  </g>
+  <!-- Text -->
+  <text x="55" y="33" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#1a1a2e">
+    <tspan fill="#1a1a2e">One</tspan><tspan fill="#4361ee">Click</tspan><tspan fill="#1a1a2e">AI</tspan>
+  </text>
+</svg>
