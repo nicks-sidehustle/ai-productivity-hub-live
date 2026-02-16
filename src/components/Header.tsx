@@ -12,11 +12,11 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="OneClickAI"
-            width={200}
-            height={40}
-            className="h-8 sm:h-10 w-auto"
+            width={180}
+            height={100}
+            className="h-10 sm:h-12 w-auto"
             priority
           />
         </Link>
