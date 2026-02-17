@@ -11,6 +11,36 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'ai-writing-tools-beyond-chatgpt-2026-tested-ranked',
+    title: 'AI Writing Tools Beyond ChatGPT: 8 Alternatives I Tested and Ranked for 2026',
+    excerpt: 'From Notion AI to Claude Opus 4.6 — I spent 30+ hours testing the latest writing tools so you don\'t waste money on overhyped alternatives.',
+    category: 'Tools',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-17',
+    readTime: '12 min read',
+    featured: true,
+  },
+  {
+    slug: 'midjourney-alternatives-ai-image-generators-2026-comparison',
+    title: 'MidJourney Alternatives: 7 AI Image Generators That Actually Compete in 2026',
+    excerpt: 'MidJourney costs $10/month minimum. These alternatives offer better value, unique features, or completely free access — with side-by-side quality tests.',
+    category: 'Tools',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-17',
+    readTime: '10 min read',
+    featured: true,
+  },
+  {
+    slug: 'ai-automation-workflow-guide-zapier-make-n8n-2026',
+    title: 'The Complete AI Automation Guide: Building Workflows That Actually Save Time in 2026',
+    excerpt: 'Stop manually copying data between apps. This step-by-step guide shows you how to build AI-powered workflows that handle the boring stuff automatically.',
+    category: 'Tutorials',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-17',
+    readTime: '15 min read',
+    featured: true,
+  },
+  {
     slug: 'vibe-working-gen-z-ai-trend-actually-genius',
     title: '"Vibe Working": The Gen Z AI Trend That\'s Actually Genius',
     excerpt: 'How a quirky workplace concept is quietly revolutionizing productivity — and why your business should pay attention.',
