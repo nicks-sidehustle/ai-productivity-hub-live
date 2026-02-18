@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify({
         email,
-        listIds: [6], // OneclickAI list
+        listIds: [16], // OneclickAI list
         updateEnabled: true,
         attributes: {
           SOURCE: 'oneclickai',

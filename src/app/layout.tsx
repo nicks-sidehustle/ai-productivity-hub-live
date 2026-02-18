@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
+import { ExitIntentPopup } from '@/components/ExitIntentPopup';
 import Footer from '@/components/Footer';
 import { OrganizationJsonLd } from '@/components/JsonLd';
 
@@ -47,6 +48,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ExitIntentPopup
+          siteName="OneclickAI"
+          headline="🤖 Wait! Don't Miss Our AI Insights"
+          description="Get weekly AI tool reviews, tutorials, and exclusive deals delivered to your inbox."
+          buttonText="Subscribe Free"
+          accentColor="#7c3aed"
+        />
       </body>
     </html>
   );
