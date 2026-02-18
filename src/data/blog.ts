@@ -11,6 +11,36 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'snowflake-cortex-code-enterprise-ai-coding-revolution-2026',
+    title: 'Snowflake Cortex Code: The Enterprise AI Coding Revolution Just Got Real (February 2026 Launch)',
+    excerpt: 'Snowflake just dropped an AI coding agent that understands your actual enterprise data context. This isn\'t another GitHub Copilot clone — it\'s something bigger.',
+    category: 'Development',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-18',
+    readTime: '14 min read',
+    featured: true,
+  },
+  {
+    slug: 'voice-powered-ai-productivity-revolution-wisprflow-notebooklm-2026',
+    title: 'The Voice-Powered AI Revolution: Why WisprFlow and NotebookLM Are Killing Traditional Productivity Apps',
+    excerpt: 'Typing is becoming the bottleneck. The latest AI productivity tools let you think out loud and get work done at the speed of speech.',
+    category: 'Productivity',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-18',
+    readTime: '13 min read',
+    featured: true,
+  },
+  {
+    slug: 'agentic-ai-marketing-chatgpt-ads-shift-2026',
+    title: 'The Death of Marketing as We Know It: How Agentic AI and ChatGPT Ads Are Reshaping Everything',
+    excerpt: 'OpenAI just introduced ads in ChatGPT. This isn\'t just another advertising platform — it\'s the beginning of the end for traditional marketing.',
+    category: 'Marketing',
+    author: 'OneClickAI Team',
+    publishDate: '2026-02-18',
+    readTime: '15 min read',
+    featured: true,
+  },
+  {
     slug: 'ai-writing-tools-beyond-chatgpt-2026-tested-ranked',
     title: 'AI Writing Tools Beyond ChatGPT: 8 Alternatives I Tested and Ranked for 2026',
     excerpt: 'From Notion AI to Claude Opus 4.6 — I spent 30+ hours testing the latest writing tools so you don\'t waste money on overhyped alternatives.',
