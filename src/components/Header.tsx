@@ -14,9 +14,9 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="OneClickAI"
-            width={180}
-            height={100}
-            className="h-10 sm:h-12 w-auto"
+            width={240}
+            height={72}
+            className="h-14 sm:h-16 md:h-20 w-auto object-contain"
             priority
           />
         </Link>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { Inter } from 'next/font/google';
+import { Inter, Nunito } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import { ExitIntentPopup } from '@/components/ExitIntentPopup';
@@ -8,6 +8,12 @@ import Footer from '@/components/Footer';
 import { OrganizationJsonLd } from '@/components/JsonLd';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["400", "600", "700", "800"]
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://oneclickai.io'),
@@ -32,7 +38,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={`${inter.className} ${nunito.variable}`}>
       <head>
         <meta name="impact-site-verification" content="0f9cc5f9-dbf7-4525-bede-01582140f155" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-NS7WCWRVJX" strategy="afterInteractive" />
